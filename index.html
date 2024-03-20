@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Machinery</title>
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1" style="width: 1920px; height: 1080px; background: #CCCCCC"></canvas>
+  <body style="display:flex; justify-content:center; align-content:center; text-align: center; padding: 0; border: 0; margin: 0;">
+    <canvas id="unity-canvas" tabindex="-1" style="width: 100vw; height: 100vh; background: #CCCCCC"></canvas>
     <script src="Build/Build PC.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/7fa82610e9e3ff576ce8d65b1afd0a7e.data.unityweb",
-        frameworkUrl: "Build/a177bb06260cf329fe2f99de9d7490bf.js.unityweb",
-        codeUrl: "Build/da17b028c385c293c9b3ac5f1a8522fd.wasm.unityweb",
+        dataUrl: "Build/e4560d584006ed29e5404cb3cafe0db7.data.unityweb",
+        frameworkUrl: "Build/fb7784ea287f347a83de460ec3141691.js.unityweb",
+        codeUrl: "Build/2d37ef251042abacc8672fb99387f95e.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ikarus",
         productName: "Machinery",
