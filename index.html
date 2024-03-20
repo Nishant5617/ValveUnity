@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Machinery</title>
   </head>
-  <body style="display:flex; justify-content:center; align-content:center; text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" tabindex="-1" style="width: 100vw; height: 100vh; background: #CCCCCC"></canvas>
-    <script src="Build/Build PC.loader.js"></script>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1" style="width: 1920px; height: 1080px; background: #CCCCCC"></canvas>
+    <script src="Build/ValveUnity.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,7 +25,7 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/40233e9fc5f97a4f3d3c594f53b9615d.data.unityweb",
+        dataUrl: "Build/4859e8cc36e81aab3465df96459f2f76.data.unityweb",
         frameworkUrl: "Build/fb7784ea287f347a83de460ec3141691.js.unityweb",
         codeUrl: "Build/aa27011fb39715e6e3f92ff5a7928e07.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
