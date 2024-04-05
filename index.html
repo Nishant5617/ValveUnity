@@ -5,17 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Machinery</title>
   </head>
-  <body style="display:flex; justify-content:center; align-items:center; text-align: center; border: 0; height:100vh; padding: 0; margin: 0;">
-    <canvas id="unity-canvas" tabindex="-1" style="width:100vw; height: 100vh; background: #CCCCCC"></canvas>
+  <body style="display:flex; justify-content:center; align-content:center; text-align: center; padding: 0; border: 0; margin: 0;">
+    <canvas id="unity-canvas" tabindex="-1" style="width: 100vw; height: 100vh; background: #CCCCCC"></canvas>
     <script src="Build/ValveUnity.loader.js"></script>
     <script>
-	  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
-      
+
         var canvas = document.querySelector("#unity-canvas");
         canvas.style.width = "100%";
         canvas.style.height = "100%";
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/e2fee023ad5e9d4c4fa9c05a7ad4c304.data.unityweb",
-        frameworkUrl: "Build/1c7f8cf99751b388b48f0a0d2f2ac703.js.unityweb",
-        codeUrl: "Build/f58590d45df6ba4c7798da4856ee6f4a.wasm.unityweb",
+        dataUrl: "Build/c46e135c0a79e74a90e13c621c27639f.data.unityweb",
+        frameworkUrl: "Build/40a2ff76086fca89673b4475e3fada1b.js.unityweb",
+        codeUrl: "Build/408170051050f8a411206b4767e8f6f9.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ikarus",
         productName: "Machinery",
